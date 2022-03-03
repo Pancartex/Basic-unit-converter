@@ -6,9 +6,9 @@ function renderConversionHtml() {
   document.querySelector(".length-conversion-p").textContent = `
     ${quantityInput.value} meters = ${(quantityInput.value * 3.281).toFixed(
     3
-  )} | ${quantityInput.value} feet = ${(quantityInput.value / 3.281).toFixed(
-    3
-  )} meters`;
+  )} feet | ${quantityInput.value} feet = ${(
+    quantityInput.value / 3.281
+  ).toFixed(3)} meters`;
 
   document.querySelector(".volume-conversion-p").textContent = `
     ${quantityInput.value} liters = ${(quantityInput.value / 3.785).toFixed(
