@@ -2,15 +2,6 @@ const quantityInput = document.querySelector(".quantity");
 const minusInput = document.querySelector(".minus");
 const plusInput = document.querySelector(".plus");
 
-const meterToFeet = quantityInput.value * 3.281;
-const feetToMeter = quantityInput.value / 3.281;
-
-const literToGallon = quantityInput.value / 3.785;
-const gallonToLiter = quantityInput.value * 3.785;
-
-const kiloToPound = quantityInput.value * 2.205;
-const poundToKilo = quantityInput.value / 2.205;
-
 function renderConversionHtml() {
   document.querySelector(".length-conversion-p").textContent = `
     ${quantityInput.value} meters = ${(quantityInput.value * 3.281).toFixed(
